@@ -38,7 +38,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /home/ec2-user/app || git clone https://github.com/yourusername/yourrepo.git /home/ec2-user/app
+            cd /home/ec2-user/app || git clone https://github.com/akshaykashyapgithub/node-ci-cd-pipeline-git-actions /home/ec2-user/app
             cd /home/ec2-user/app
             git pull origin main
             docker stop nodeapp-cicd-container || true
